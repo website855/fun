@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameNgo Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-lg bg-white shadow-sm p-3">
+        <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <img src="logo.jpg" alt="GameNgo Logo" class="logo me-2">  
+                <span class="fw-bold fs-4">GameNgo <span class="text-success">Booking</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#">Find a Turf</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#">Video Games</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#">Party Hall</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Sidebar Filters -->
+            <aside class="col-md-3 p-4 bg-light rounded shadow-sm">
+                <h5 class="fw-bold">Game Type</h5>
+                <label class="d-block"><input type="radio" name="game-type"> Cricket</label>
+                <label class="d-block"><input type="radio" name="game-type"> Football</label>
+                <label class="d-block"><input type="radio" name="game-type"> Both</label>
+
+                <h5 class="fw-bold mt-3">Availability</h5>
+                <label class="d-block"><input type="radio" name="availability"> Remote</label>
+                <label class="d-block"><input type="radio" name="availability"> Hybrid</label>
+                <label class="d-block"><input type="radio" name="availability"> On Site</label>
+
+                <h5 class="fw-bold mt-3">Regions</h5>
+                <label class="d-block"><input type="radio" name="region"> Colombo</label>
+                <label class="d-block"><input type="radio" name="region"> Kandy</label>
+                <label class="d-block"><input type="radio" name="region"> Galle</label>
+            </aside>
+
+            <!-- Main Content -->
+            <section class="col-md-9">
+                <div class="search-bar bg-white p-3 rounded shadow-sm mb-4">
+                    <div class="row g-2">
+                        <div class="col-md-5">
+                            <input type="text" class="form-control" placeholder="Enter Location">
+                        </div>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control" placeholder="Select Turf Type">
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-success w-100">Search</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Turf Locations -->
+    <h4 class="fw-bold">Top Turf Locations</h4>
+    <div class="row g-3">
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="logo.jpg" class="card-img-top" alt="Turf">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Colombo Central</h5>
+                    <p class="card-text text-muted">Football & Cricket</p>
+                    <p class="text-success fw-semibold">Rated 4.5/5</p>
+                    <button class="btn btn-success w-100">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="logo.jpg" class="card-img-top" alt="Turf">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Galle Sports Arena</h5>
+                    <p class="card-text text-muted">Night Matches</p>
+                    <p class="text-success fw-semibold">Rated 4.7/5</p>
+                    <button class="btn btn-success w-100">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="logo.jpg" class="card-img-top" alt="Turf">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Kandy Highland Turf</h5>
+                    <p class="card-text text-muted">Scenic & Spacious</p>
+                    <p class="text-success fw-semibold">Rated 4.8/5</p>
+                    <button class="btn btn-success w-100">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="logo.jpg" class="card-img-top" alt="Turf">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Negombo Beach Turf</h5>
+                    <p class="card-text text-muted">Best for Sand Football</p>
+                    <p class="text-success fw-semibold">Rated 4.6/5</p>
+                    <button class="btn btn-success w-100">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="logo.jpg" class="card-img-top" alt="Turf">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Jaffna City Turf</h5>
+                    <p class="card-text text-muted">Biggest Turf in Sri Lanka</p>
+                    <p class="text-success fw-semibold">Rated 4.9/5</p>
+                    <button class="btn btn-success w-100">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="fw-bold mt-4">Available Turfs</h4>
+<div class="row g-3">
+    <div class="col-md-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Urban Turf</h5>
+                <p class="card-text text-muted">Sri Lankan Reels, Colombo LK</p>
+                <p class="text-success fw-semibold">1200+ bookings</p>
+                <button class="btn btn-success w-100">Explore</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Ocean View Turf</h5>
+                <p class="card-text text-muted">Negombo Beach Area</p>
+                <p class="text-success fw-semibold">850+ bookings</p>
+                <button class="btn btn-success w-100">Explore</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Royal Green Turf</h5>
+                <p class="card-text text-muted">Kandy Highlands</p>
+                <p class="text-success fw-semibold">980+ bookings</p>
+                <button class="btn btn-success w-100">Explore</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Jaffna Arena</h5>
+                <p class="card-text text-muted">Best Multi-Sport Turf</p>
+                <p class="text-success fw-semibold">1100+ bookings</p>
+                <button class="btn btn-success w-100">Explore</button>
+            </div>
+        </div>
+    </div>
+    <!-- Added 21 more turfs -->
+    <div class="col-md-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Hilltop Football Ground</h5>
+                <p class="card-text text-muted">Ella, Sri Lanka</p>
+                <p class="text-success fw-semibold">1020+ bookings</p>
+                <button class="btn btn-success w-100">Explore</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Sunrise Sports Arena</h5>
+                <p class="card-text text-muted">Matara</p>
+                <p class="text-success fw-semibold">950+ bookings</p>
+                <button class="btn btn-success w-100">Explore</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Batticaloa Star Turf</h5>
+                <p class="card-text text-muted">Batticaloa</p>
+                <p class="text-success fw-semibold">890+ bookings</p>
+                <button class="btn btn-success w-100">Explore</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Lakeside Arena</h5>
+                <p class="card-text text-muted">Kandy Lake View</p>
+                <p class="text-success fw-semibold">970+ bookings</p>
+                <button class="btn btn-success w-100">Explore</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Eastern Pride Turf</h5>
+                <p class="card-text text-muted">Trincomalee</p>
+                <p class="text-success fw-semibold">990+ bookings</p>
+                <button class="btn btn-success w-100">Explore</button>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center p-3 mt-4">
+        <p>© 2025 GameNgo. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

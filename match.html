@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameNgo - Find a Match</title>
+    <link rel="stylesheet" href="styles4.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="GameNgo Logo" class="logo-img">
+            <span class="logo-text">GameNgo</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="sports.html">Sports Equipment</a></li>
+            <li><a href="turf.html">Turf Booking</a></li>
+            <li><a href="match.html" class="active">Find a Match</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html" class="btn">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Find a Match</h1>
+        <p>Connect with a random player or use a match code.</p>
+
+        <button id="randomMatchBtn" class="btn">Find Random Match</button>
+        <div class="or-divider">OR</div>
+        <input type="text" id="matchCode" placeholder="Enter Match Code">
+        <button id="codeMatchBtn" class="btn">Find by Code</button>
+
+        <p id="matchResult"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

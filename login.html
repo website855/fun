@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - GameNgo</title>
+    <link rel="stylesheet" href="styles1.css">
+    
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="logo.jpg" alt="GameNgo Logo" class="logo">
+            <span class="site-name">GameNgo</span>
+        </div>
+        <div class="nav-right">
+            <a href="contact.html" class="contact-link">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="fullname">Fullname</label>
+                    <input type="fullname" id="fullname" name="fullname" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <!-- Forgot Password Button -->
+                <button type="button" class="forgot-password-btn" onclick="showForgotPassword()">Forgot Password?</button>
+
+                <!-- Login Button -->
+                <button type="submit" class="login-btn">Login</button>
+
+                <p id="loginError" class="error-message"></p>
+            </form>
+
+            <!-- Create New Account -->
+            <p class="signup-link">Don't have an account? <a href="signup.html">Create New Account</a></p>
+        </div>
+
+        <!-- Image -->
+        <div class="login-image">
+            <img src="logo.jpg" alt="Login Image">
+        </div>
+    </div>
+
+    <!-- Forgot Password Popup -->
+    <div id="forgot-password-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeForgotPassword()">&times;</span>
+            <h3>Forgot Password</h3>
+            <form id="forgotPasswordForm">
+                <div class="input-group">
+                    <label for="forgot-email">Enter Email</label>
+                    <input type="email" id="forgot-email" name="forgot-email" required>
+                </div>
+                <div class="input-group">
+                    <label for="otp">Enter OTP</label>
+                    <input type="text" id="otp" name="otp" required>
+                </div>
+                <button type="submit" class="reset-password-btn">Reset Password</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>
